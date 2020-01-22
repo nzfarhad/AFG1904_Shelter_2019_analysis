@@ -395,8 +395,7 @@ data$perc_male_65_over <- (data$male_65_over / data$household_size) * 100
 data$perc_female_65_over <- (data$female_65_over / data$household_size) * 100
 
 
-# disaggregations: 
-
+# disaggregation vars: 
 data$strata_hoh_gender <- paste0(data$strata,"_",data$hoh_gender_final)
 data$strata_resp_gender <- paste0(data$strata,"_",data$resp_gender)
 

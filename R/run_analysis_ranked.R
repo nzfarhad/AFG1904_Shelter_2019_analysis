@@ -1,7 +1,3 @@
-# getwd()
-
-# rm(list=ls());setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 source("R/functions/small_function.r")
 source("R/functions/surveymodule.r")
 source("R/functions/graph_function.R")
@@ -19,12 +15,10 @@ names(data) <- gsub(x = names(data), pattern = "\\.", replacement = "/")
 
 
 # Load analysis plan
-# log<-read_excel("input/analysisplans/analysis_plan_ranked.xlsx")  
-log<-read_excel("input/analysisplans/analysis_plan_hoh_gender.xlsx") 
+log<-read_excel("input/analysisplans/analysis_plan_ranked.xlsx")
+# log<-read_excel("input/analysisplans/analysis_plan_hoh_gender.xlsx") 
 log$analysis_key<-paste0(log$xi,"/",log$yi)
 
-# questions<-read.csv("asset/questionaire.questions.csv", stringsAsFactors = F)
-# choices<-read.csv("asset/questionaire.choices.csv", stringsAsFactors = F )
 
 questions<-read_excel("input/questionaire/reach_afg_esnfw_kobo_v4_08.12.19.xlsx", sheet = 'survey')
 choices<-read_excel("input/questionaire/reach_afg_esnfw_kobo_v4_08.12.19.xlsx", sheet = 'choices')
