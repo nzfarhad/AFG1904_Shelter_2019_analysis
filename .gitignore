@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+input/samplingframe/shelter_sample_v2_kobo_ready_extended-translated.xlsx
+input/data/clean/Shelter_unhcr_2019_clean_data.csv
+!input/data/clean/.gitkeep
+input/data/recoded/shelter_2019_recoded_data.csv
+!input/data/recoded/.gitkeep
+data_cleaning/*
+data_cleaning/data_cleaning_output/*
+!data_cleaning/data_cleaning_output/.gitkeep
+data_cleaning/raw/*
+!data_cleaning/raw/.gitkeep
